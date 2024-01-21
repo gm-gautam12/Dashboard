@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { auth, provider } from "../Firebase";
 import { signInWithPopup } from "firebase/auth";
-import { Navigate, useNavigate } from "react-router-dom";
+import { Navigate, useNavigate, Link } from "react-router-dom";
 import google from "../assets/google-icon 1.png";
 import apple from "../assets/apple 1.png";
 import github from "../assets/github.svg";
@@ -72,9 +72,9 @@ const Login = () => {
           </div>
           <div className="fixed flex justify-center items-center w-full h-fit bottom-0 clipped-opposite mb-12">
             <div className="flex gap-x-6">
-              <img src={github} className="w-[34px] h-[34px]" />
+              <Link to="https://github.com/gm-gautam12"><img src={github} className="w-[34px] h-[34px]" /></Link>
+              <Link to="https://www.linkedin.com/in/gautam-mishra-151745211/"><img src={linkedin} className="w-[34px] h-[34px]" /></Link>
               <img src={twitter} className="w-[34px] h-[34px]" />
-              <img src={linkedin} className="w-[34px] h-[34px]" />
               <img src={discord} className="w-[34px] h-[34px]" />
             </div>
           </div>
